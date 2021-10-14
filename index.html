@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vietnamese to Unicode Hex for C/C++" />
+    <meta property="og:description" content="Convert chuỗi tiếng việt thành unicode hex để in trong console C/C++" />
+    <meta property="og:url" content="https://meNoob2VN.github.io/v2uh" />
+    <meta property="og:site_name" content="Vietnamese To Unicode Hex" />
+    <meta property="og:image" content="./android-chrome-192x192.png" />
+    <meta property="og:image:width" content="192" />
+    <meta property="og:image:height" content="192" />
+    <meta property="og:locale" content="vi_VN" />
+    <title>Vietnamese To Unicode Hex</title>
+</head>
+<body>
+    <main>
+        <h2>Chuyển Chuỗi Tiếng Việt Sang Unicode Để In Ra Console C/C++</h2>
+
+        <h3>Nhập chuỗi tiếng việt cần chuyển đổi</h3>
+        <textarea name="input" id="input" cols="30" rows="10" placeholder="Điền chuỗi tiếng việt bạn muốn chuyển đổi tại đây"></textarea>
+        
+        <div id="result">
+            <div id="langs-select-wrapper">
+                <p>Chọn ngôn ngữ : </p>
+                <div id="langs-select">
+                    <input type="text" name="lang" id="lang-inp" class="hidden" value="c" required>
+                    <button id="lang-btn">C</button>
+                    <ul id="langs-list" class="hidden">
+                        <li class="lang">C</li>
+                        <li class="lang">C++</li>
+                    </ul>                
+                </div>
+
+            </div>
+            <h3>Kết quả</h3>
+        </div>
+
+        <div id="output-box">
+            <p id="output"></p>
+            <button class="copy-btn" id="copy-btn1">Nhấn vào đây để copy</button>   
+        </div>
+
+        <h4>Lưu ý : Thêm các dòng này vào đầu file :</h4>
+        <div id="notice-box">
+            <p id="notice"></p>
+            <button class="copy-btn" id="copy-btn2">Nhấn vào đây để copy</button>   
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

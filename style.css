@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    color: #DDDDDD;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #121212;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #121212;
+    min-height: 100vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#input {
+    display: block;
+}
+
+#input, #output, #notice {
+    background-color: #272727;
+    width: 60vw;
+    max-width: 80vw;
+    min-height: 10vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto
+}
+
+#output-box, #notice-box, #result {
+    position: relative;
+}
+
+.copy-btn {
+    position: absolute;
+    background-color: #272727;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    right: 0;
+    top: 0;
+}
+
+.copy-btn:hover {
+    background-color: #524b4b;
+}
+
+#output::-webkit-scrollbar { height: 10px;}
+#output::-webkit-scrollbar-button {  background-color: #666; }
+#output::-webkit-scrollbar-track {  background-color: #646464;}
+#output::-webkit-scrollbar-track-piece { background-color: rgb(54, 50, 50);}
+#output::-webkit-scrollbar-thumb { height: 50px; background-color: #666}
+#output::-webkit-scrollbar-corner { background-color: #646464;}
+#output::-webkit-resizer { background-color: #666;}
+
+#result {
+    width: 100%;
+}
+
+#result > h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#langs-select-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    column-gap: 10px;
+}
+
+#lang-btn, .lang {
+    background-color: #272727;
+}
+
+#langs-select {
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+
+#lang-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+}
+
+#lang-btn:after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+#langs-list {
+    position: absolute;
+    top:20px;
+    left: 0px;
+    width: 80px;
+    display: block;
+    flex-direction: column;
+    z-index: 99;
+}
+
+.lang {
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.lang:hover, #lang-btn:hover {
+    background-color: #4c4545;
+}
