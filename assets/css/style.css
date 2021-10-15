@@ -22,7 +22,7 @@ main {
     align-items: center;
     row-gap: 15px;
     background-color: #121212;
-    min-height: 100vh;
+    min-height: calc( 100vh - 75px );
     width: 60vw;
     margin: 0 auto;
 }
@@ -68,6 +68,8 @@ h2 {
     background-color: #524b4b;
 }
 
+/* Custom horizontal scroll */
+
 #output::-webkit-scrollbar { height: 10px;}
 #output::-webkit-scrollbar-button {  background-color: #666; }
 #output::-webkit-scrollbar-track {  background-color: #646464;}
@@ -75,6 +77,8 @@ h2 {
 #output::-webkit-scrollbar-thumb { height: 50px; background-color: #666}
 #output::-webkit-scrollbar-corner { background-color: #646464;}
 #output::-webkit-resizer { background-color: #666;}
+
+/* Language select */
 
 #result {
     width: 100%;
@@ -145,3 +149,35 @@ h2 {
 .lang:hover, #lang-btn:hover {
     background-color: #4c4545;
 }
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    background-color: #333333;
+}
+
+#footer-wrapper {
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#social {
+    margin-left: auto;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+/* 
+.social-icon img {
+    color: #DDDDDD;
+} */
